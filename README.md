@@ -1,4 +1,4 @@
-a social media platform with secure authentication, user profiles, post and comment management, media uploads, and follow/unfollow features. Included a Django admin panel for easy content and user management.
+A social media platform with secure authentication, user profiles, post and comment management, media uploads, and follow/unfollow features. Included a Django admin panel for easy content and user management.
 
 
 <p align="center">
