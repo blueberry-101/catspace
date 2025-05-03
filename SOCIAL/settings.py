@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -13,7 +14,7 @@ SECRET_KEY = 'django-insecure-^@j5)b_dqt+wy%ndclcnf4lq+n#d9*5=%w-y5epj)=d&*&o4r&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["blueberry123.pythonanywhere.com","127.0.0.1","localhost"]
 
 
 # Application definition
@@ -69,11 +70,9 @@ WSGI_APPLICATION = 'SOCIAL.wsgi.application'
 
 # Database settings
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "OPTIONS": {
-            "read_default_file": "home/wasim/PROJECTS/NEW_PROJECT/SOCIAL MEDIA/my.cnf",
-        },
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
